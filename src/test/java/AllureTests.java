@@ -23,7 +23,7 @@ public class AllureTests extends TestBase {
 
     @Test
     void lambdaTest() {
-        step("Найти 'Natalya-N/qa-guru-lesson10' с помощью строки поиска", () -> {
+        step("Найти " + searchValue + " с помощью строки поиска", () -> {
             $("[data-target='qbsearch-input.inputButtonText']").click();
             $("[data-target='query-builder.input']").setValue(searchValue).pressEnter();
         });
